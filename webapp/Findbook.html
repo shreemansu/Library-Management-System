@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search Book</title>
+
+<style>
+    body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-color: #f4f6f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: #333;
+    }
+
+    form {
+        width: 360px;
+        margin: 30px auto;
+        background: #ffffff;
+        padding: 25px 30px;
+        border-radius: 8px;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #555;
+        text-align: left;
+    }
+
+    input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    input[type="number"]:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+    }
+
+    input[type="submit"] {
+        width: 100%; 
+        padding: 12px;
+        background-color: #28a745;
+        border: none;
+        border-radius: 5px;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #1e7e34;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>Search Book</h1>
+
+<form action="findbook.jsp" method="get">
+
+    <label>Enter Book ID</label>
+    <input type="number" name="bookid" required>
+
+    <input type="submit" value="Search Book">
+
+</form>
+
+</body>
+</html>
