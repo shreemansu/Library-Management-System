@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Library Home Page</title>
+
+<style>
+    body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-color: #f4f6f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header */
+    header {
+        background-color: #343a40;
+        color: white;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 22px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* Main content */
+    .container {
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .container h2 {
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 14px 30px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 6px;
+        transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Library Management System</h1>
+    <nav>
+        <a href="login.html">Login</a>
+        <a href="logout">Logout</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Welcome to Library Home Page</h2>
+    <a href="allbook.jsp" class="btn">See All Books</a>
+</div>
+
+</body>
+</html>
